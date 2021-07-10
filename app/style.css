@@ -8,7 +8,7 @@ html,body{
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ec5c30, #f02975, #20b8f0, #1de6b7);
 	background-size: 2000% 2000% ;
     background-repeat: no-repeat;
     animation: gradient 15s ease infinite;
@@ -70,11 +70,13 @@ button{
     font-weight: bold;
     background: rgba( 255, 255, 255, 0.40 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8.0px );
+backdrop-filter: blur( 9.0px );
 -webkit-backdrop-filter: blur( 8.0px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin: 1rem .5rem;
+    width: 95%;
+    
 }
 
 .card{
@@ -84,9 +86,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 8px; 
 }
 
+
+
+
+
 .grid-1{
-    display: grid;
-    
+    display: grid;    
     text-align: left;
 }
 
@@ -94,8 +99,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 0;
-    line-height: .2rem;
+    line-height: .5rem;
     border-bottom: 1px solid white;
+    padding: 1rem 0;
 }
 
 .grid-1-1 p{
@@ -112,17 +118,21 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-size: 1.8rem;
 }
 
-
 #time{
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    opacity: .4;
 }
 
 .features{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
 }
 
+.features p{
+    font-weight: bolder;
+}
 
 h1{
     font-size: 1.7rem;
@@ -131,7 +141,6 @@ h1{
 h2{
     font-size: 1.5rem;
 }
-
 
 ::-webkit-scrollbar {
     width: 3px;
