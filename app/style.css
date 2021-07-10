@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+input{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    width: 50%;
+    margin: 1rem 0;
+    border: 1px solid white;
+    border-radius: 2.5px;
+    padding: .5rem 1.5rem;
+}
+
+::placeholder{
+    color: white;
+    opacity: .8;
+}
+
+button{
+    margin: 1rem 0;
+    font-weight: bolder;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2.5px;
+    padding: .5rem 1.5rem;
+}
+
+#grid{
+    display: grid;
+    text-align: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));   
+    border-radius: 27px;
+    background: #333333;
+    box-shadow: -1px 10px 46px 3px rgba(44, 44, 44, 0.75);
+-webkit-box-shadow: -1px 10px 46px 3px rgba(44, 44, 44, 0.75);
+-moz-box-shadow: -1px 10px 46px 3px rgba(44, 44, 44, 0.75);
+    margin: .5rem;
+}
+
+.card{
+    text-align: left;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px; 
+}
+
+.grid-1{
+    display: grid;
+    text-align: left;
+}
+
+.grid-1-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .5rem;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+#temp{
+    font-size: 1.8rem;
+}
+
+
+#time{
+    font-weight: bolder;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: white;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #302f2f79; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black; 
+}
