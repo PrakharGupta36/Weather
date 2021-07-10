@@ -25,7 +25,7 @@ function weather() {
         
     .then((response) => response.json())
       .then((data) => { (city.textContent = data.location.name),
-        (country.textContent = `${data.location.country},`),
+        (country.textContent = `${data.location.country} ,`),
         (weatherCurrent.textContent = `${data.current.condition.text}`),
         (weatherImg.src = `${data.current.condition.icon}`),
         (temp.textContent = `${data.current.temp_c}°C`),
@@ -34,7 +34,7 @@ function weather() {
         (humidity.textContent = `Humidity : ${data.current.humidity}%`),
         (uv.textContent = `UV index : ${data.current.uv}`),
         (wind.textContent = `Wind speed : ${data.current.wind_kph}kph`);
-        (region.textContent = `${data.location.region},`)
+        (region.textContent = `${data.location.region} ,`)
       });
         
 }

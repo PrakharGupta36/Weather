@@ -9,8 +9,9 @@ html,body{
     overflow-x: hidden;
     margin: 0;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	background-size: 2000% 2000% ;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
     color: black;
 }
 
@@ -91,9 +92,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .grid-1-1{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: .5rem;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0;
+    line-height: .2rem;
     border-bottom: 1px solid white;
+}
+
+.grid-1-1 p{
+    font-size: 1.2rem;
 }
 
 .buttons{
@@ -109,6 +115,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 #time{
     font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 .features{
